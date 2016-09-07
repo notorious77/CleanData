@@ -5,7 +5,7 @@
 library(stringr)
 library(plyr) ;library(dplyr)
 
-setwd("//admin-fs1/Users/rwaiters/My Documents/R/RProgamming/Data/UCI_HAR_Dataset/")
+setwd("//admin-fs1/Users/********/My Documents/R/RProgamming/Data/UCI_HAR_Dataset/")
 
 feat <- read.table("features.txt",encoding="UTF-8")
 act <-read.table("activity_labels.txt",encoding="UTF-8")
