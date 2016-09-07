@@ -51,5 +51,5 @@ alldata <-cbind(test_train_dataset_x,test_train_dataset_y,subject_dataset)
 
 
 # step 5 create a new data set that provides averages by activity and subject  UGH
-averages_data <-ddply(alldata, .(subject,activity),function(x) colMeans(x[, 1:66]))
-write.table(averages_data, "averages_data.txt", row.names = FALSE)
+averagesdata <-ddply(alldata, .(subject,activity),function(x) colMeans(x[, 1:66]))
+write.table(averagesdata, "averagesdata.txt", row.names = FALSE)
